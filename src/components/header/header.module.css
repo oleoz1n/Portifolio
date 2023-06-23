@@ -1,0 +1,79 @@
+.headerul{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+.select {
+    border-radius: 0;
+    border-bottom: #00214d 4px solid;
+    animation-duration: .1s;
+    animation-name: appear-border;
+}
+
+.select:hover {
+    background-color:transparent;
+    padding: 0px;
+    border-radius: 0px;
+    color: #00214d;
+    border-bottom: 4px solid #00214d;
+    cursor:default;
+}
+
+a {
+    height: 100%;
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:#00214d;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+a:hover {
+    background-color: #00214d;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: white;
+    border-bottom: 0px solid #00214d;
+    transition: .5s;
+}
+
+.logo {
+    height: 80px;
+    margin: 0 8rem;
+    transition: .3s;
+}
+
+.logo:hover {
+    height: 100px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transition: .5s;
+    cursor: grab;
+}
+
+.logo:active {
+    height: 100px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transition: .5s;
+    cursor: grab;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+}
+
+@keyframes appear-border {
+    from {border-bottom: 0 white;}
+    to {border-bottom: 100% ;}
+}
