@@ -73,7 +73,20 @@ a:hover {
     top: 0px;
 }
 
+
+Example {
+    display: none;
+}
+
 @keyframes appear-border {
     from {border-bottom: 0 white;}
     to {border-bottom: 100% ;}
 }
+
+@media (max-width: 1280px) {
+  
+    .headerul {
+        display: none;
+    }
+    
+  }

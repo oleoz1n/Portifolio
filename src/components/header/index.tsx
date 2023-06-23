@@ -1,6 +1,7 @@
 import logob from './L1-black.svg'
 import styles from './header.module.css'
 import { useMotionValue, useTransform, motion } from 'framer-motion';
+import { Example } from "./navbar";
 
 
 
@@ -18,7 +19,7 @@ function Header(){
       }
         
       const item = {
-        hidden: { y: 10, opacity: 0 },
+        hidden: { y: 20, opacity: 0 },
         visible: {
           y: 0,
           opacity: 1
@@ -31,15 +32,17 @@ function Header(){
     const rotateY = useTransform(x, [-100, 100], [-150, 150]);
     
     return (
+      <>
         <header className={styles.header}>
-        <motion.ul initial="hidden"
+        <Example/>
+        <motion.ul
+        initial="hidden"
         animate="visible" 
         variants={container} 
         className={styles.headerul}>
             <motion.li variants={item}><a className={styles.select} href="">Portifolio</a></motion.li>
             <motion.li variants={item}><a href="">Resume</a></motion.li>
             <motion.div
-            variants={item} 
             style={{ x, y, rotateX, rotateY, z: 100 }}
             drag
             dragElastic={0.09}
@@ -51,6 +54,7 @@ function Header(){
             <motion.li variants={item}><a href="">Contact</a></motion.li>
             </motion.ul>
             </header>
+            </>
     )
 }
 export default Header;
