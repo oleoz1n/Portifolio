@@ -1,6 +1,6 @@
 import styles from './resume.module.css'
 import { TypeAnimation } from 'react-type-animation';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Type1(){
     
