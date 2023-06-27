@@ -1,10 +1,10 @@
 import styles from './resume.module.css'
 import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from 'react';
-
+import Redes from './redes'
 function Type1(){
     
-      return <h1><TypeAnimation
+      return <h1 className={styles.h1R}><TypeAnimation
         sequence={['Olá, sou o Leonardo Guerra']}
         cursor={false}
         speed={1} 
@@ -61,11 +61,17 @@ function Resume(){
       }, []);
 
     return(
-        <>
+        <section className={styles.section_resume} id="resumo">
+        <div>
         <Type1/>
-        <h2>{showType2 && <Type2 />}
+        <h2 className={styles.types2}>{showType2 && <Type2 />}
         {showType3 && <Type3/>}</h2>
-        </>
+        
+        <div className={styles.redes}>
+      <Redes/>
+      </div>
+        </div>
+        </section>
     )
 }
 

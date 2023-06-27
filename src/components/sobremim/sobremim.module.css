@@ -1,0 +1,38 @@
+.sectionS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f4f6;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.titleS {
+    color: #00214d;
+    font-size: 3rem;
+}
+
+.pSobre {
+    font-weight: 500;
+    color: #1b2d45;
+    padding: 0rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.pSobre span {
+    color: #ff5470;
+}
+
+@media (max-width: 959px){
+
+    .sectionS {padding: 4rem 1rem;}
+
+    .titleS {
+        font-size: 2rem;
+    }
+    
+    .pSobre {
+        font-size: 1rem;
+    }
+}

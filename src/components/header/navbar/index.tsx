@@ -31,7 +31,7 @@ const Navigation = () => (
   </motion.ul>
 );
 
-const itemIds = ['Portifolio', 'Resume', 'About', 'Contact'];
+const itemIds = ['Resumo','Sobre mim', 'Portifolio', 'Contato'];
 
 
 
@@ -76,7 +76,7 @@ const Path = (props: any) => (
   />
 );
 const MenuToggle = ( { toggle }: { toggle: any } ) => (
-  <button onClick={toggle}>
+  <button className={styles.botao} onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
@@ -132,6 +132,7 @@ export const Example = () => {
 
   return (
     <motion.nav
+      className={styles.nav}
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}
