@@ -26,18 +26,19 @@ const variantes = {
 const Navigation = () => (
   <motion.ul className={styles.navul} variants={variantes}>
     {itemIds.map(i => (
-      <MenuItem i={i} key={i} />
+      <MenuItem i={i} key={i[0]} />
     ))}
   </motion.ul>
 );
 
-const itemIds = ['Resumo','Sobre mim', 'Portifolio', 'Contato'];
+const itemIds = [['Resumo', 'resumo'],['Sobre mim','sobremim' ], ['Portifolio','portifolio'], ['Contato','contato']];
 
 
 
 const variants = {
   open: {
     y: 0,
+    display: 'block',
     opacity: 1,
     transition: {
       y: { stiffness: 1000, velocity: -100 }
@@ -45,7 +46,7 @@ const variants = {
   },
   closed: {
     y: 50,
-    opacity: 0,
+    display: 'none',
     transition: {
       y: { stiffness: 1000 }
     }
@@ -60,7 +61,7 @@ const MenuItem = ({ i }: { i: any}) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-    {i}
+    <a href={`#${i[1]}`}>{i[0]}</a>
     </motion.li>
   );
 };

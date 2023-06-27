@@ -3,8 +3,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
-  height: 100vh;
   z-index: 11;
   }
   
@@ -49,7 +47,7 @@
   }
   
 
-.navli {
+.navli a {
   color:#FFE;
   font-weight: 500;
   font-size: 24px;
