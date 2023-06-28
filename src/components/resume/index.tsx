@@ -2,6 +2,8 @@ import styles from './resume.module.css'
 import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from 'react';
 import Redes from './redes'
+import { motion } from "framer-motion";
+
 function Type1(){
     
       return <h1 className={styles.h1R}><TypeAnimation
@@ -43,6 +45,7 @@ function Resume(){
 
     const [showType2, setShowType2] = useState(false);
     const [showType3, setShowType3] = useState(false);
+    const [showDiv, setShowDiv] = useState(false)
 
     useEffect(() => {
       const timeout = setTimeout(() => {
@@ -60,6 +63,14 @@ function Resume(){
         return () => clearTimeout(timeout);
       }, []);
 
+      useEffect(() => {
+        const timeout = setTimeout(() => {
+          setShowDiv(true);
+        }, 5200);
+    
+        return () => clearTimeout(timeout);
+      }, []);
+
     return(
         <section className={styles.section_resume} id="resumo">
         <div>
@@ -67,9 +78,21 @@ function Resume(){
         <h2 className={styles.types2}>{showType2 && <Type2 />}
         {showType3 && <Type3/>}</h2>
         
-        <div className={styles.redes}>
+        { showDiv && <motion.div className={styles.redes}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001
+          }
+          }}>
       <Redes/>
-      </div>
+      </motion.div>}
         </div>
         </section>
     )

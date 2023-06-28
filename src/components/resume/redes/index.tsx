@@ -1,37 +1,101 @@
 import emailIcon from './email.png'
 import linkedinIcon from './linkedin.png'
 import githunIcon from './github.png'
+import cvIcon from './cv.png'
 import styles from './redes.module.css'
+
+function showBalao(id:string){
+    const el = document.getElementById(id);
+    if(el){
+    el.classList.add('showBalao');
+    el.classList.remove('hideBalao')
+}
+}
+
+function hideBalao(id:string){
+    const el = document.getElementById(id);
+    if(el){
+    el.classList.add('hideBalao');
+    el.classList.remove('showBalao');
+}
+}
 
 
 function Email(){
+
+    const elementId = 'email';
+
     return(
+
+        <div
+        onMouseOver={() => showBalao(elementId)}
+        onMouseOut={() => hideBalao(elementId)}
+        >
         <a href="mailto:leopity0@gmail.com" target='_blank'>
         <div className={`${styles.infos} ${styles.emailNone}`}>
             <img src={emailIcon} alt="Email-Icon" />
         </div>
         </a>
+        <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Email</p></div>
+        </div>
     )
 }
 
 
 function Github(){
+
+    const elementId = 'github';
+
     return(
+
+        <div
+        onMouseOver={() => showBalao(elementId)}
+        onMouseOut={() => hideBalao(elementId)}
+        >
         <a href="https://github.com/oleoz1n" target='_blank'>
         <div className={styles.infos}>
             <img src={githunIcon} alt="GitHub-Icon" />
         </div>
         </a>
+        <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Github</p></div>
+        </div>
     )
 }
 
 function Linkedin(){
+
+    const elementId = 'linkedin';
+
     return(
+        <div
+        onMouseOver={() => showBalao(elementId)}
+        onMouseOut={() => hideBalao(elementId)}
+        >
         <a href="https://github.com/oleoz1n" target='_blank'>
         <div className={styles.infos}>
             <img src={linkedinIcon} alt="Linkedin-Icon" />
         </div>
         </a>
+        <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Linkedin</p></div>
+        </div>
+    )
+}
+
+function Cv(){
+
+    const elementId = 'cv';
+
+    return(
+        <div 
+        onMouseOver={() => showBalao(elementId)}
+        onMouseOut={() => hideBalao(elementId)}>
+        <a href="/react-portifolio/CV.pdf" target='_blank'>
+        <div className={styles.infos}>
+            <img src={cvIcon} alt="CV-Icon" />
+        </div>
+        </a>
+        <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Curriculo PDF</p></div>
+        </div>
     )
 }
 
@@ -44,6 +108,7 @@ function Redes(){
         <Email/>
         <Github/>
         <Linkedin/>
+        <Cv/>
         </>
 )
 }

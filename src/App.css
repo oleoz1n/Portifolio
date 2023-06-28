@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+.showBalao {
+  display: block;
+}
+
+.hideBalao {
+  display: none;
+}
 
 @media (max-width: 1280px) {
   #root {padding: 0px;}
