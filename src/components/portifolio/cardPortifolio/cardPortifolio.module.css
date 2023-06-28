@@ -1,11 +1,20 @@
+.PortifolioCard {
+    width: 30rem;
+    height: 100%;
+}
+
 .imgPort {
+    position: relative;
     width: 30rem;
     height: 18rem;
+    border-radius: 4px;
     cursor:pointer;
-    z-index: 9;
+    z-index: 2;
 }
 
 .balaoPort {
+    position: relative;
+    display: flex;
     justify-content: space-between;
     width: 30rem;
     height: 3rem;
@@ -44,4 +53,11 @@
     filter: brightness(.95);
     cursor:pointer;
     transition: .4s;
+}
+
+@media (max-width: 1280px){
+    .balaoPort {
+    position: relative;
+    display: none;
+    }
 }
