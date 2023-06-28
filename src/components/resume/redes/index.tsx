@@ -1,7 +1,7 @@
-import emailIcon from './email.png'
-import linkedinIcon from './linkedin.png'
-import githunIcon from './github.png'
-import cvIcon from './cv.png'
+import emailIcon from './email.svg'
+import linkedinIcon from './linkedin.svg'
+import githunIcon from './github.svg'
+import cvIcon from './cv.svg'
 import styles from './redes.module.css'
 
 function showBalao(id:string){
@@ -71,7 +71,7 @@ function Linkedin(){
         onMouseOver={() => showBalao(elementId)}
         onMouseOut={() => hideBalao(elementId)}
         >
-        <a href="https://github.com/oleoz1n" target='_blank'>
+        <a href="https://www.linkedin.com/in/oleoz1n/" target='_blank'>
         <div className={styles.infos}>
             <img src={linkedinIcon} alt="Linkedin-Icon" />
         </div>

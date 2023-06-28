@@ -11,11 +11,13 @@
 }
 
 .types2 {
+    text-indent: 1rem;
     align-self: flex-start;
 }
 
 .type{
-    color: #00ebc7;
+    text-decoration: underline;
+    color: #ff5470;
 }
 
 .section_resume {
@@ -29,6 +31,7 @@
 .redes {
     display: flex;
     align-items: flex-start;
+    margin-left: 1rem;
 }
 
 
@@ -54,10 +57,15 @@
     
     .types2 {
         font-size: 1.5rem;
+        text-indent: 0;
     }
 
     .section_resume {
             padding: 1rem;
             padding-bottom: 4rem;
     }
+    .redes {
+        margin-left: 0;
+    }
+
 }

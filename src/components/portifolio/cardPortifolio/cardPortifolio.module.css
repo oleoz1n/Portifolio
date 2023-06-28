@@ -1,0 +1,47 @@
+.imgPort {
+    width: 30rem;
+    height: 18rem;
+    cursor:pointer;
+    z-index: 9;
+}
+
+.balaoPort {
+    justify-content: space-between;
+    width: 30rem;
+    height: 3rem;
+    background-color: #001534;
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+    transform: translateY(-1rem);
+    align-items: center;
+    z-index: 1;
+}
+
+.balaoPort .pBalaoPort, .botaoBalaoPort {
+    margin: 1rem;
+}
+
+.botaoBalaoPort {
+    background-color: #fde24f;
+    width: 5rem;
+    color: #00214d;
+    font-weight: 900;
+    font-size: .8rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px black solid;
+}
+
+.botaoBalaoPort:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+    cursor:pointer;
+    transition: .4s;
+}
+
+.botaoBalaoPort:active {
+    transform: scale(.99);
+    filter: brightness(.95);
+    cursor:pointer;
+    transition: .4s;
+}

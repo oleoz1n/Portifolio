@@ -2,7 +2,7 @@ import styles from './sobremim.module.css'
 
 function Sobremim(){
     return (
-        <section className={styles.sectionS}>
+        <section id='sobremim' className={styles.sectionS}>
         <h2 className={styles.titleS}>Sobre mim</h2>
         <p className={styles.pSobre}>
         Desenvolvedor Full Stack com experiência em <span>TypeScript</span>, <span>JavaScript</span>, <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>Python</span>.
