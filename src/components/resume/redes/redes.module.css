@@ -28,7 +28,9 @@
     padding: 20px;
     position: absolute;
     text-align: center;
+    transform: translateY(-12px);
 }
+
 .balao:after{ /*Triangulo*/
     content: "";
     width: 0;
@@ -40,7 +42,8 @@
     /*Aqui entra a cor da "aba" do balão */
     border-bottom: 20px solid #001534;
     top: -20px; /*localização. Experimente alterar para 'bottom'*/
-    left: 24px;
+    left: 25px;
+    
 }
 
 .infos:hover {
