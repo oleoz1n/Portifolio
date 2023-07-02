@@ -1,0 +1,190 @@
+.BACKGROUND_STYLE{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0, 0.7);
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+
+.MODAL_STYLE {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    transform: translate(-50%,-50%);
+    background-color: #001534;
+    border-radius: 16px;
+    color: black;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.MODAL_STYLE::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+  }
+  
+.MODAL_STYLE::-webkit-scrollbar-track {
+    background: none;        
+    border-radius: 8px;        /* color of the tracking area */
+  }
+  
+.MODAL_STYLE::-webkit-scrollbar-thumb {
+    background-color: #00ebc7;
+    border-radius: 20px;
+  }
+
+  .textModal::-webkit-scrollbar {
+    width: 4px;              
+  }
+  
+  .textModal::-webkit-scrollbar-track {
+    background: none;        
+    border-radius: 8px;
+  }
+  
+  .textModal::-webkit-scrollbar-thumb {
+    background-color: #00ebc7;    
+    border-radius: 20px;
+  }
+
+
+.modalRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 92%;
+    gap: 1rem;
+}
+
+.cardModal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.botaoFechar{
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    line-height: 0;
+    z-index: 1;
+}
+
+.spamFechar{
+    font-size: 2.5rem;
+    color:white;
+}
+
+.disableScroll {
+    overflow: hidden;
+}
+
+.imagemModal{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.botoesModal {
+    margin-top:1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.botoesModal2{
+    display: none;
+}
+
+.botaoModal, .botaoModal2 {
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    color: #F9F9F9;
+    font-size: 1rem;
+    padding: .2rem 1rem;
+    background: radial-gradient(circle, rgba(0,43,101,1) 0%, rgba(0,33,77,1) 100%);
+    border-radius: .5rem;
+}
+
+.titleModal{
+    color: #fffffe;
+    width: 90%;
+    font-size: 2rem;
+} 
+
+.textModal{
+    font-weight: 500;
+    color:#b7c9e4;
+    font-size: 1.2rem;
+    max-height: 18rem;
+    overflow-y: auto;
+}
+
+.dataModal{
+    font-weight: 400;
+    color: #ff5470;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 1280px){ 
+    .MODAL_STYLE{
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .cardModal{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .botoesModal{
+        display: none;
+    }
+
+    .botoesModal2{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .botaoModal2{
+        width: 100%;
+    }
+
+    .modalRight{
+        justify-content: center;
+        gap: .8rem;
+        width: 100%;
+    }
+
+    .titleModal{
+        font-size: 1.5rem;
+    } 
+    
+    .textModal{
+        font-size: 1rem;
+        max-height: 100%;
+    }
+    
+    .dataModal{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .MODAL_STYLE{
+        width: 100%;
+    }
+}

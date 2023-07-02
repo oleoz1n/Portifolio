@@ -50,7 +50,7 @@ function Header(){
             whileTap={{ cursor: 'grabbing' }}>
                 <img src={logob} alt="logo" id='logoHeader' draggable="false" className={styles.logo} />
             </motion.div>
-            <motion.li variants={item}><a className={styles.ah} href="#portifolio">Portifolio</a></motion.li>
+            <motion.li variants={item}><a className={styles.ah} href="#projetos">Projetos</a></motion.li>
             <motion.li variants={item}><a className={styles.ah} href="#contato">Contato</a></motion.li>
             </motion.ul>
             </header>

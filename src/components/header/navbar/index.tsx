@@ -31,7 +31,7 @@ const Navigation = () => (
   </motion.ul>
 );
 
-const itemIds = [['Resumo', 'resumo'],['Sobre mim','sobremim' ], ['Portifolio','portifolio'], ['Contato','contato']];
+const itemIds = [['Resumo', 'resumo'],['Sobre mim','sobremim' ], ['Projetos','projetos'], ['Contato','contato']];
 
 
 

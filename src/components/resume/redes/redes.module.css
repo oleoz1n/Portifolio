@@ -15,6 +15,14 @@
     transition: .3s;
 }
 
+.Icons{
+    height: 100%;
+}
+
+.cvIcon {
+    height: 80%;
+}
+
 .balao{
     margin: 0 auto; 
     background: #001534;
@@ -87,10 +95,6 @@
         margin: 0
     }
 
-    .infos img {
-        width: 3rem;
-        height: 3rem;
-    }
 }
 
 @media (max-width: 1280px){

@@ -33,7 +33,7 @@ function Email(){
         >
         <a href="mailto:leopity0@gmail.com" target='_blank'>
         <div className={`${styles.infos} ${styles.emailNone}`}>
-            <img src={emailIcon} alt="Email-Icon" />
+            <img src={emailIcon} className={styles.Icons} alt="Email-Icon" />
         </div>
         </a>
         <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Email</p></div>
@@ -54,7 +54,7 @@ function Github(){
         >
         <a href="https://github.com/oleoz1n" target='_blank'>
         <div className={styles.infos}>
-            <img src={githunIcon} alt="GitHub-Icon" />
+            <img src={githunIcon} className={styles.Icons} alt="GitHub-Icon" />
         </div>
         </a>
         <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Github</p></div>
@@ -73,7 +73,7 @@ function Linkedin(){
         >
         <a href="https://www.linkedin.com/in/oleoz1n/" target='_blank'>
         <div className={styles.infos}>
-            <img src={linkedinIcon} alt="Linkedin-Icon" />
+            <img src={linkedinIcon} className={styles.Icons} alt="Linkedin-Icon" />
         </div>
         </a>
         <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Linkedin</p></div>
@@ -91,7 +91,7 @@ function Cv(){
         onMouseOut={() => hideBalao(elementId)}>
         <a href="/react-portifolio/CV.pdf" target='_blank'>
         <div className={styles.infos}>
-            <img src={cvIcon} alt="CV-Icon" />
+            <img src={cvIcon} className={`${styles.cvIcon}  ${styles.Icons}`} alt="CV-Icon" />
         </div>
         </a>
         <div className={`${styles.balao} ${'hideBalao'}`} id={elementId}><p>Curriculo PDF</p></div>

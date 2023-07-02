@@ -1,10 +1,18 @@
-.sectionS {
+.sectionSobremim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.divSobremim {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f2f4f6;
     padding: 4rem;
     border-radius: 1rem;
+    max-width: 1600px;
 }
 
 .titleS {
@@ -22,17 +30,25 @@
 
 .pSobre span {
     color: #ff5470;
+    font-weight: 800;
 }
 
 @media (max-width: 959px){
 
-    .sectionS {padding: 4rem 1rem;}
+    .divSobremim {
+        padding: 4rem 1rem;
+        background-color: #fffffe;
+    }
 
     .titleS {
         font-size: 2rem;
     }
     
     .pSobre {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .pSobre span{
+        color: #00214d;
     }
 }
