@@ -25,10 +25,10 @@
     width: 96px;
     height: auto;
     color: #fffffe;
-    padding: 20px;
+    padding: 8px 12px;
     position: absolute;
     text-align: center;
-    transform: translateY(-12px);
+    transform: translateY(-8px);
 }
 
 .balao:after{ /*Triangulo*/
