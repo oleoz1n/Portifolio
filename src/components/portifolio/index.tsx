@@ -6,11 +6,11 @@ import gs1 from '/gs1.png'
 import sabio from '/sabio.png'
 import pokedex from '/pokedex.png'
 import htmlSVG from '/html.svg'
-import tsSVG from '/ts.svg'
+// import tsSVG from '/ts.svg'
 import apiSVG from '/api.svg'
 import jsSVG from '/js.svg'
-import figmaSVG from '/figma.svg'
-import reactSVG from '/react.svg'
+// import figmaSVG from '/figma.svg'
+// import reactSVG from '/react.svg'
 import cssSVG from '/css.svg'
 
 function Portifolio(){
@@ -82,8 +82,8 @@ function Portifolio(){
     data='09/2022'
     id='sabio'
     tecs={[htmlSVG, cssSVG, jsSVG]}
-    linkSite='https://oleoz1n.github.io/AI-Feed'
-    linkGithub='https://github.com/oleoz1n/AI-Feed'
+    linkSite='https://oleoz1n.github.io/pergunte-ao-sabio/'
+    linkGithub='https://github.com/oleoz1n/pergunte-ao-sabio'
     /> 
     <CardPortifolio
     imagem={pokedex}
@@ -92,8 +92,8 @@ function Portifolio(){
     data='04/2023'
     id='pokedex'
     tecs={[htmlSVG, cssSVG, jsSVG,apiSVG]}
-    linkSite='https://oleoz1n.github.io/AI-Feed'
-    linkGithub='https://github.com/oleoz1n/AI-Feed'
+    linkSite='https://github.com/oleoz1n/Pokedex-Modify'
+    linkGithub='https://oleoz1n.github.io/Pokedex-Modify/'
     /> 
     </div>
     </section>

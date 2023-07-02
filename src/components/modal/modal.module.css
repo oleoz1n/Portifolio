@@ -95,10 +95,12 @@
     margin-top:1rem;
     display: flex;
     gap: 1rem;
+    font-weight: 400;
 }
 
 .botoesModal2{
     display: none;
+    font-weight: 400;
 }
 
 .botaoModal, .botaoModal2 {
