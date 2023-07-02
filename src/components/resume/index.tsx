@@ -1,8 +1,8 @@
 import styles from './resume.module.css'
 import { TypeAnimation } from 'react-type-animation';
-import { useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Redes from './redes'
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 function Type1(){
     
@@ -43,6 +43,9 @@ function Type3(){
 
 function Resume(){
 
+  const ref = useRef(null);
+  const isInViewLoop = useInView(ref);
+
     const [showType2, setShowType2] = useState(false);
     const [showType3, setShowType3] = useState(false);
     const [showDiv, setShowDiv] = useState(false)
@@ -71,10 +74,25 @@ function Resume(){
         return () => clearTimeout(timeout);
       }, []);
 
+      useEffect(() => {
+        if (isInViewLoop) {
+          const elementos = document.querySelectorAll(".select");
+          elementos.forEach((elemento) => {
+            elemento.classList.remove("select");
+          });
+          const resumoHeader = document.getElementById("resumoHeader");
+          if (resumoHeader) {
+            resumoHeader.classList.add("select");
+          }
+        
+        }
+      }, [isInViewLoop]);
     return(
-        <section className={styles.section_resume} id="resumo">
+        <section  className={styles.sectionResume} id="resumo">
         <div>
-        <Type1/>
+          <div ref={ref}>
+        <Type1 />
+        </div>
         <h2 className={styles.types2}>{showType2 && <Type2 />}
         {showType3 && <Type3/>}</h2>
         

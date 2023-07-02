@@ -20,11 +20,13 @@
     color: #ff5470;
 }
 
-.section_resume {
+.sectionResume {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12rem 0;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 4rem 0 0 0;
 }
 
 .redes {
@@ -44,8 +46,10 @@
         font-size: 2rem;
     }
 
-    .section_resume {
+    .sectionResume {
+            padding: 1rem;
             padding-top: 0rem;
+            min-height: 0;
     }
 }
 
@@ -59,9 +63,9 @@
         text-indent: 0;
     }
 
-    .section_resume {
+    .sectionResume {
             padding: 1rem;
-            padding-bottom: 4rem;
+            min-height: 0;
     }
     .redes {
         margin-left: 0;

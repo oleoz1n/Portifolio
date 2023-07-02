@@ -1,5 +1,5 @@
 import CardPortifolio from "./cardPortifolio"
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
 import styles from './portifolio.module.css'
 import gs1 from '/gs1.png'
@@ -16,7 +16,9 @@ import cssSVG from '/css.svg'
 function Portifolio(){
 
         const ref = useRef(null);
+        const ref2 = useRef(null);
         const isInView = useInView(ref, { once: true });
+        const isInViewLoop = useInView(ref2);
 
 
     const Gs1Desc = () => (
@@ -51,8 +53,21 @@ function Portifolio(){
         <li className={styles.Listinside}>API REST</li>
         </div>
       );
-    
-    
+      useEffect(() => {
+        if (isInViewLoop) {
+          const elementos = document.querySelectorAll(".select");
+          elementos.forEach((elemento) => {
+            elemento.classList.remove("select");
+          });
+          const projetosHeader = document.getElementById("projetosHeader");
+          if (projetosHeader) {
+            projetosHeader.classList.add("select");
+          }
+        
+        }
+      }, [isInViewLoop]);
+        
+
     return (
         <section
         ref={ref}
@@ -61,10 +76,11 @@ function Portifolio(){
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
           }}
+          id='projetos'
         className={styles.sectionP}>
         
         <h1 className={styles.titlePortifolio}>Projetos</h1>
-        <div className={styles.projetos}>
+        <div className={styles.projetos} ref={ref2}>
     <CardPortifolio
     imagem={gs1}
     nome="Global Solution FIAP"

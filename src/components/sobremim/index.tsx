@@ -1,10 +1,24 @@
 import styles from "./sobremim.module.css";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
 
 function Sobremim() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const isInViewLoop = useInView(ref);
+
+  useEffect(() => {
+    if (isInViewLoop) {
+      const elementos = document.querySelectorAll(".select");
+      elementos.forEach((elemento) => {
+        elemento.classList.remove("select");
+      });
+      const sobremimHeader = document.getElementById("sobremimHeader");
+      if (sobremimHeader) {
+        sobremimHeader.classList.add("select");
+      }
+    }
+  }, [isInViewLoop]);
 
   return (
     <section
@@ -17,8 +31,10 @@ function Sobremim() {
       id="sobremim"
       className={styles.sectionSobremim}
     >
-      <div className={styles.divSobremim}>
-        <h2 className={styles.titleS}>Sobre mim</h2>
+      <div className={styles.divSobremim} >
+        <h2 id="sobremimHeader" className={styles.titleS}>
+          Sobre mim
+        </h2>
         <p className={styles.pSobre}>
           Desenvolvedor Full Stack com experiência em <span>TypeScript</span>,{" "}
           <span>JavaScript</span>, <span>React</span>, <span>HTML</span>,{" "}

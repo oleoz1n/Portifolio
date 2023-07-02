@@ -11,21 +11,6 @@
     backdrop-filter: blur(3px);
     border-radius: 16px;
 }
-.select {
-    border-radius: 0;
-    border-bottom: #00214d 4px solid;
-    animation-duration: .1s;
-    animation-name: appear-border;
-}
-
-.select:hover {
-    background-color:transparent;
-    padding: 0px;
-    border-radius: 0px;
-    color: #00214d;
-    border-bottom: 4px solid #00214d;
-    cursor:default;
-}
 
 .ah {
     height: 100%;

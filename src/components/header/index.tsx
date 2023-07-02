@@ -40,8 +40,8 @@ function Header(){
         animate="visible" 
         variants={container} 
         className={styles.headerul}>
-            <motion.li variants={item}><a className={`${styles.select} ${styles.ah}`}  href="#resumo">Resumo</a></motion.li>
-            <motion.li variants={item}><a className={styles.ah} href="#sobremim">Sobre Mim</a></motion.li>
+            <motion.li variants={item}><a id='resumoHeader' className={`select ${styles.ah}`}  href="#resumo">Resumo</a></motion.li>
+            <motion.li variants={item}><a id='sobremimHeader' className={styles.ah} href="#sobremim">Sobre Mim</a></motion.li>
             <motion.div
             style={{ x, y, rotateX, rotateY, z: 100 }}
             drag
@@ -50,8 +50,8 @@ function Header(){
             whileTap={{ cursor: 'grabbing' }}>
                 <img src={logob} alt="logo" id='logoHeader' draggable="false" className={styles.logo} />
             </motion.div>
-            <motion.li variants={item}><a className={styles.ah} href="#projetos">Projetos</a></motion.li>
-            <motion.li variants={item}><a className={styles.ah} href="#contato">Contato</a></motion.li>
+            <motion.li variants={item}><a id='projetosHeader' className={styles.ah} href="#projetos">Projetos</a></motion.li>
+            <motion.li variants={item}><a id='contatoHeader' className={styles.ah} href="#contato">Contato</a></motion.li>
             </motion.ul>
             </header>
             </>
