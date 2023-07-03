@@ -20,6 +20,7 @@
 .titleS {
     color: #00214d;
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .pSobre {
@@ -35,6 +36,22 @@
     font-weight: 800;
 }
 
+
+.titleH{
+    color: #00214d;
+    font-size: 3rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 @media (max-width: 959px){
 
     .divSobremim {
@@ -43,6 +60,10 @@
     }
 
     .titleS {
+        font-size: 2rem;
+    }
+
+    .titleH{
         font-size: 2rem;
     }
     

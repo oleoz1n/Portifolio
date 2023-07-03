@@ -45,7 +45,7 @@ function Header(){
 
     return (
       <>
-        <header className={styles.header}>
+        <header id='header' className={styles.header}>
         <Example />
         <motion.ul
         initial="hidden"

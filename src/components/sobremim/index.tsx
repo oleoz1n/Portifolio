@@ -1,6 +1,16 @@
 import styles from "./sobremim.module.css";
 import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
+import Habilidade from './habilidade'
+import htmlSVG from '/html.svg'
+import tsSVG from '/ts.svg'
+import apiSVG from '/api.svg'
+import jsSVG from '/js.svg'
+import figmaSVG from '/figma.svg'
+import reactSVG from '/react.svg'
+import cssSVG from '/css.svg'
+
+
 
 function Sobremim() {
   const ref = useRef(null);
@@ -43,6 +53,37 @@ function Sobremim() {
           experiência em projetos gerenciados por Metodologias Ágeis. Estudando
           Análise e Desenvolvimento de Sistemas pela FIAP.
         </p>
+        <h2 className={styles.titleH}>Habilidades</h2>
+        <div className={styles.habilidades}>
+        <Habilidade
+        imagem={apiSVG}
+        nome='API REST'
+        />
+        <Habilidade
+        imagem={htmlSVG}
+        nome='HTML5'
+        />
+        <Habilidade
+        imagem={cssSVG}
+        nome='CSS3'
+        />
+        <Habilidade
+        imagem={tsSVG}
+        nome='TypeScript'
+        />
+        <Habilidade
+        imagem={jsSVG}
+        nome='JavaScript'
+        />
+        <Habilidade
+        imagem={figmaSVG}
+        nome='Figma'
+        />
+        <Habilidade
+        imagem={reactSVG}
+        nome='React'
+        />
+        </div>
       </div>
     </section>
   );

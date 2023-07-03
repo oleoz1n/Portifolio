@@ -13,7 +13,7 @@ function Contato(){
     const isInView = useInView(ref, { once: true });
 
     return (
-        <section className={styles.sectionC}
+        <section id='contato' className={styles.sectionC}
         ref={ref}
       style={{
         transform: isInView ? "none" : "translateX(-200px)",
