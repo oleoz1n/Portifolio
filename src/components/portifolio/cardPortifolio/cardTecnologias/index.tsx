@@ -10,9 +10,9 @@ function CardTecnologias({ tecs }: CardTecnologiasProps) {
   );
 
   return (
-    <>
+    <div className={styles.tecnologiasDrop}>
       <Tecnologias />
-      </>
+      </div>
   );
 }
 

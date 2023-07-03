@@ -31,12 +31,13 @@ function CardPortifolio({
   return (
     <>
       <motion.div
+      className={styles.centralizaModal}
       animate={{
+        zIndex: openModal? 1000 : 1000,
         opacity: openModal? 1: 0,
-        scale: openModal? 1 : 0
       }}
       transition={{
-        duration: openModal? .2 : .5
+        duration: openModal? .3 : .5
       }}
       >
         <Modal
@@ -59,9 +60,7 @@ function CardPortifolio({
         onMouseOut={() => {
           setHovered(false);
         }}
-        onClick={() => {
-          setOpenModal(true), setHovered(false);
-        }}
+        
         animate={{ 
           scale: isHovered ? 1.16 : 1,
           zIndex: isHovered ? 12 : 0
@@ -78,6 +77,9 @@ function CardPortifolio({
           className={styles.imgPort}
           src={imagem}
           alt={nome}
+          onClick={() => {
+            setOpenModal(true), setHovered(false);
+          }}
           draggable="false"
         />
         <motion.div
@@ -102,7 +104,9 @@ function CardPortifolio({
           className={`${styles.balaoPort} ${"hideBotaoPort"}`}
         >
           <p className={styles.pBalaoPort}>{data}</p>
-          <button className={styles.botaoBalaoPort}>Ver mais</button>
+          <button className={styles.botaoBalaoPort} onClick={() => {
+            setOpenModal(true), setHovered(false);
+          }}>Ver mais</button>
         </motion.div>
       </motion.div>
     </>

@@ -14,9 +14,9 @@ function App() {
       <Resume/>
       <Sobremim/>
       <Portifolio/>
-      <Footer/>
       <Contato/>
       <ScrollPage/>
+      <Footer/>
       </>
   )
 }
