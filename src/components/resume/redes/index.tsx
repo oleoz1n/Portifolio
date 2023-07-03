@@ -1,7 +1,7 @@
-import emailIcon from './email.svg'
-import linkedinIcon from './linkedin.svg'
-import githunIcon from './github.svg'
-import cvIcon from './cv.svg'
+import emailIcon from '/email.svg'
+import linkedinIcon from '/linkedin.svg'
+import githunIcon from '/github.svg'
+import cvIcon from '/cv.svg'
 import styles from './redes.module.css'
 
 function showBalao(id:string){

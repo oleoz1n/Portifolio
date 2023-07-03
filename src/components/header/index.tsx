@@ -31,6 +31,18 @@ function Header(){
     const rotateX = useTransform(y, [-100, 100], [150, -150]);
     const rotateY = useTransform(x, [-100, 100], [-150, 150]);
     
+
+      function SelectMode(x:any){
+        const elementos = document.querySelectorAll(".select");
+          elementos.forEach((elemento) => {
+            elemento.classList.remove("select");
+          });
+          const selectId = document.getElementById(x);
+          if(selectId){  
+          selectId.classList.add("select");
+        }
+      }
+
     return (
       <>
         <header className={styles.header}>
@@ -40,8 +52,8 @@ function Header(){
         animate="visible" 
         variants={container} 
         className={styles.headerul}>
-            <motion.li variants={item}><a id='resumoHeader' className={`select ${styles.ah}`}  href="#resumo">Resumo</a></motion.li>
-            <motion.li variants={item}><a id='sobremimHeader' className={styles.ah} href="#sobremim">Sobre Mim</a></motion.li>
+            <motion.li variants={item}><a id='resumoHeader' className={`select ${styles.ah}`} onClick={() => SelectMode('resumoHeader')}  href="#resumo">Resumo</a></motion.li>
+            <motion.li variants={item}><a id='sobremimHeader' className={styles.ah} onClick={() => SelectMode('sobremimHeader')} href="#sobremim">Sobre Mim</a></motion.li>
             <motion.div
             style={{ x, y, rotateX, rotateY, z: 100 }}
             drag
@@ -50,8 +62,8 @@ function Header(){
             whileTap={{ cursor: 'grabbing' }}>
                 <img src={logob} alt="logo" id='logoHeader' draggable="false" className={styles.logo} />
             </motion.div>
-            <motion.li variants={item}><a id='projetosHeader' className={styles.ah} href="#projetos">Projetos</a></motion.li>
-            <motion.li variants={item}><a id='contatoHeader' className={styles.ah} href="#contato">Contato</a></motion.li>
+            <motion.li variants={item}><a id='projetosHeader' onClick={() => SelectMode('projetoHeader')} className={styles.ah} href="#projetos">Projetos</a></motion.li>
+            <motion.li variants={item}><a id='contatoHeader' onClick={() => SelectMode('contatoHeader')} className={styles.ah} href="#contato">Contato</a></motion.li>
             </motion.ul>
             </header>
             </>

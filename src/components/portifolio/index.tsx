@@ -79,7 +79,7 @@ function Portifolio(){
           id='projetos'
         className={styles.sectionP}>
         
-        <h1 className={styles.titlePortifolio}>Projetos</h1>
+        <h2 className={styles.titlePortifolio}>Projetos</h2>
         <div className={styles.projetos} ref={ref2}>
     <CardPortifolio
     imagem={gs1}
