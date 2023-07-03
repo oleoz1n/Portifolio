@@ -87,3 +87,9 @@
 
 
 }
+
+@media (max-width: 959px){
+    .titleContato{
+        font-size: 2rem;
+    }
+}
