@@ -83,6 +83,8 @@ function CardPortifolio({
           draggable="false"
         />
         <motion.div
+        onClick={() => {
+          setOpenModal(true), setHovered(false);}}
           className={styles.tecnologias}
           animate={{
             opacity: isHovered ? 0 : 1,
@@ -92,7 +94,7 @@ function CardPortifolio({
         >
           <p className={styles.titleCard}>{nome}</p>
           <div>
-            <CardTecnologias tecs={tecs} />
+            <CardTecnologias tecs={tecs}  />
           </div>
         </motion.div>
         <motion.div
