@@ -85,11 +85,19 @@
         min-width: 9rem;
     }
 
+    .contato:hover {
+        scale: 1;
+    }
+
 
 }
 
 @media (max-width: 959px){
     .titleContato{
         font-size: 2rem;
+    }
+
+    .contato:hover {
+        scale: 1;
     }
 }
