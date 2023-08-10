@@ -89,7 +89,7 @@ function Cv(){
         <div 
         onMouseOver={() => showBalao(elementId)}
         onMouseOut={() => hideBalao(elementId)}>
-        <a href="/Portifolio/cv.pdf" target='_blank'>
+        <a href="/Portifolio/CV.pdf" target='_blank'>
         <div className={styles.infos}>
             <img src={cvIcon} className={`${styles.cvIcon}  ${styles.Icons}`} alt="CV-Icon" />
         </div>
