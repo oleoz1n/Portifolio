@@ -108,8 +108,8 @@ function Portifolio(){
     data='04/2023'
     id='pokedex'
     tecs={[htmlSVG, cssSVG, jsSVG,apiSVG]}
-    linkSite='https://github.com/oleoz1n/Pokedex-Modify'
-    linkGithub='https://oleoz1n.github.io/Pokedex-Modify/'
+    linkSite='https://oleoz1n.github.io/Pokedex-Modify/'
+    linkGithub='https://github.com/oleoz1n/Pokedex-Modify'
     /> 
     </div>
     </section>
