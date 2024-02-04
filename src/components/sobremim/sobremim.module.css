@@ -1,11 +1,10 @@
-.sectionSobremim{
+.sectionSobremim {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 60vh;
 }
-
 
 .divSobremim {
     display: flex;
@@ -36,8 +35,7 @@
     font-weight: 800;
 }
 
-
-.titleH{
+.titleH {
     color: #00214d;
     font-size: 2rem;
     margin: 2rem 0 1rem 0;
@@ -46,14 +44,14 @@
 .habilidades {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    max-width: 960px;
 }
 
-@media (max-width: 959px){
-
+@media (max-width: 959px) {
     .divSobremim {
         padding: 4rem 1rem;
         background-color: #fffffe;
@@ -63,15 +61,15 @@
         font-size: 2rem;
     }
 
-    .titleH{
+    .titleH {
         font-size: 1.5rem;
     }
-    
+
     .pSobre {
         font-size: 1.2rem;
     }
 
-    .pSobre span{
+    .pSobre span {
         color: #00214d;
     }
 }
