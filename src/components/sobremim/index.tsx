@@ -18,9 +18,7 @@ function Sobremim() {
             className={styles.sectionSobremim}
         >
             <div className={styles.divSobremim}>
-                <h2 id="sobremim" className={styles.titleS}>
-                    Sobre mim
-                </h2>
+                <h2 className={styles.titleS}>Sobre mim</h2>
                 <p className={styles.pSobre}>
                     Sou um <span>desenvolvedor </span>
                     dedicado e versátil, motivado por desafios e sempre em busca

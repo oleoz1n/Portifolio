@@ -17,7 +17,7 @@ function Type() {
 
 function Resume() {
     return (
-        <section className={styles.sectionResume} id="resumo">
+        <section className={styles.sectionResume}>
             <div>
                 <div>
                     <h1 className={styles.h1R}>Olá, sou o Leonardo Guerra</h1>
