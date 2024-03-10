@@ -60,13 +60,18 @@ function Sobremim() {
                     Sobre mim
                 </h2>
                 <p className={styles.pSobre}>
-                    Desenvolvedor Full Stack com experiência em{" "}
-                    <span>TypeScript</span>, <span>JavaScript</span>,{" "}
-                    <span>React</span>, <span>HTML</span>, <span>CSS</span> e{" "}
-                    <span>Python</span>. Apaixonado pelo desenvolvimento de
-                    componentes reutilizáveis. Também possui experiência em
-                    projetos gerenciados por Metodologias Ágeis. Estudando
-                    Análise e Desenvolvimento de Sistemas pela FIAP.
+                    Analista e Desenvolvedor de Sistemas com experiência em
+                    <span>TypeScript</span>, <span>JavaScript</span>,
+                    <span>React</span>, <span>HTML</span>, <span>CSS</span> e
+                    <span>Python</span>. Sou um desenvolvedor dedicado e
+                    versátil, motivado por desafios e sempre em busca de mais
+                    conhecimento para garantir o sucesso e qualidade no que
+                    desenvolvo, trabalho bem em equipe, sou disponível,
+                    comunicativo, adaptável e possuo empatia e inteligência
+                    emocional. Meus objetivos incluem aprimorar minhas
+                    habilidades de desenvolvimento, contribuir para projetos
+                    inovadores e crescer profissionalmente em um ambiente
+                    estimulante.
                 </p>
                 <h2 className={styles.titleH}>Habilidades</h2>
                 <div className={styles.habilidades}>
