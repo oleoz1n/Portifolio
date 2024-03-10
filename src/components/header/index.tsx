@@ -1,4 +1,4 @@
-import logob from "./L1-black.svg";
+import logob from "/L1-black.svg";
 import styles from "./header.module.css";
 import { useMotionValue, useTransform, motion } from "framer-motion";
 import { Example } from "./navbar";
