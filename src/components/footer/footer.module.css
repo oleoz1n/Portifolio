@@ -5,3 +5,9 @@
     min-height: 10vh;
     background-color: #fffffe;
 }
+.copyRight {
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
