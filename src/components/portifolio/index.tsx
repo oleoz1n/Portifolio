@@ -1,5 +1,5 @@
 import CardPortifolio from "./cardPortifolio";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { useInView } from "framer-motion";
 import styles from "./portifolio.module.css";
 import gs1 from "/gs1.png";
@@ -17,7 +17,6 @@ function Portifolio() {
     const ref = useRef(null);
     const ref2 = useRef(null);
     const isInView = useInView(ref, { once: true });
-    const isInViewLoop = useInView(ref2);
 
     const Gs1Desc = () => (
         <div className={styles.TextPortGap}>
@@ -59,18 +58,6 @@ function Portifolio() {
             <li className={styles.Listinside}>API REST</li>
         </div>
     );
-    useEffect(() => {
-        if (isInViewLoop) {
-            const elementos = document.querySelectorAll(".select");
-            elementos.forEach((elemento) => {
-                elemento.classList.remove("select");
-            });
-            const projetosHeader = document.getElementById("projetosHeader");
-            if (projetosHeader) {
-                projetosHeader.classList.add("select");
-            }
-        }
-    }, [isInViewLoop]);
 
     return (
         <section

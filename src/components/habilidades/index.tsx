@@ -10,26 +10,12 @@ import cssSVG from "/css.svg";
 import pythonSVG from "/python.svg";
 import javaSVG from "/java.svg";
 import sqlSVG from "/sql.svg";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 export default function Habilidades() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-    const isInViewLoop = useInView(ref);
-
-    useEffect(() => {
-        if (isInViewLoop) {
-            const elementos = document.querySelectorAll(".select");
-            elementos.forEach((elemento) => {
-                elemento.classList.remove("select");
-            });
-            const habilidades = document.getElementById("habilidades");
-            if (habilidades) {
-                habilidades.classList.add("select");
-            }
-        }
-    }, [isInViewLoop]);
 
     const listaDeHabilidades = [
         { imagem: apiSVG, nome: "API REST" },

@@ -1,24 +1,10 @@
 import styles from "./sobremim.module.css";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 function Sobremim() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-    const isInViewLoop = useInView(ref);
-
-    useEffect(() => {
-        if (isInViewLoop) {
-            const elementos = document.querySelectorAll(".select");
-            elementos.forEach((elemento) => {
-                elemento.classList.remove("select");
-            });
-            const sobremim = document.getElementById("sobremim");
-            if (sobremim) {
-                sobremim.classList.add("select");
-            }
-        }
-    }, [isInViewLoop]);
 
     return (
         <section
