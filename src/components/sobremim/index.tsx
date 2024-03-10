@@ -13,9 +13,9 @@ function Sobremim() {
             elementos.forEach((elemento) => {
                 elemento.classList.remove("select");
             });
-            const sobremimHeader = document.getElementById("sobremimHeader");
-            if (sobremimHeader) {
-                sobremimHeader.classList.add("select");
+            const sobremim = document.getElementById("sobremim");
+            if (sobremim) {
+                sobremim.classList.add("select");
             }
         }
     }, [isInViewLoop]);
@@ -32,7 +32,7 @@ function Sobremim() {
             className={styles.sectionSobremim}
         >
             <div className={styles.divSobremim}>
-                <h2 id="sobremimHeader" className={styles.titleS}>
+                <h2 id="sobremim" className={styles.titleS}>
                     Sobre mim
                 </h2>
                 <p className={styles.pSobre}>
