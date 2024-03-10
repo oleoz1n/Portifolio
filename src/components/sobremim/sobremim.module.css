@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
 }
 
 .divSobremim {
@@ -33,22 +32,6 @@
 .pSobre span {
     color: #ff5470;
     font-weight: 800;
-}
-
-.titleH {
-    color: #00214d;
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0;
-}
-
-.habilidades {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 960px;
 }
 
 @media (max-width: 959px) {
