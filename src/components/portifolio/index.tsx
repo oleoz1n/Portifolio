@@ -18,19 +18,6 @@ function Portifolio() {
     const ref2 = useRef(null);
     const isInView = useInView(ref, { once: true });
 
-    const Gs1Desc = () => (
-        <div className={styles.TextPortGap}>
-            <p>
-                Esse site foi desenvolvido por mim, durante a Global Solution do
-                1º semestre do curso de análise e desenvolvimento de sistemas da
-                FIAP.
-            </p>
-            <ul>As Tecnologias Usadas Foram:</ul>
-            <li className={styles.Listinside}>HTML</li>
-            <li className={styles.Listinside}>CSS</li>
-        </div>
-    );
-
     const SabioDesc = () => (
         <div className={styles.TextPortGap}>
             <p>
@@ -72,16 +59,6 @@ function Portifolio() {
         >
             <h2 className={styles.titlePortifolio}>Projetos</h2>
             <div className={styles.projetos} ref={ref2}>
-                <CardPortifolio
-                    imagem={gs1}
-                    nome="Global Solution FIAP"
-                    desc={<Gs1Desc />}
-                    data="06/2023"
-                    id="gs1"
-                    tecs={[htmlSVG, cssSVG]}
-                    linkSite="https://oleoz1n.github.io/AI-Feed"
-                    linkGithub="https://github.com/oleoz1n/AI-Feed"
-                />
                 <CardPortifolio
                     imagem={sabio}
                     nome="Pergunte ao Sabio"
