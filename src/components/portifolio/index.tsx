@@ -2,7 +2,6 @@ import CardPortifolio from "./cardPortifolio";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import styles from "./portifolio.module.css";
-import gs1 from "/gs1.png";
 import sabio from "/sabio.png";
 import pokedex from "/pokedex.png";
 import htmlSVG from "/html.svg";
