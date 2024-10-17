@@ -16,6 +16,7 @@ import spring from "/spring.svg"
 import azure from "/azure.svg"
 import gcp from "/gcp.svg"
 import powerBi from "/powerBi.svg"
+import docker from "/docker.svg"
 
 import { useRef } from "react"
 import { useInView } from "framer-motion"
@@ -41,6 +42,7 @@ export default function Habilidades() {
 		{ imagem: azure, nome: "Azure" },
 		{ imagem: gcp, nome: "Google Cloud" },
 		{ imagem: powerBi, nome: "Power BI" },
+		{ imagem: docker, nome: "Docker" },
 	]
 	return (
 		<section
