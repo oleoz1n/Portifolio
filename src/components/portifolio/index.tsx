@@ -2,7 +2,6 @@ import CardPortifolio from "./cardPortifolio"
 import { useRef } from "react"
 import { useInView } from "framer-motion"
 import styles from "./portifolio.module.css"
-import sabio from "/sabio.png"
 import pokedex from "/pokedex.png"
 import cida from "/cida.png"
 
