@@ -19,20 +19,6 @@ function Portifolio() {
 	const ref2 = useRef(null)
 	const isInView = useInView(ref, { once: true })
 
-	const SabioDesc = () => (
-		<div className={styles.TextPortGap}>
-			<p>
-				Esse site foi desenvolvido por mim, baseado em um site chamado
-				"Pergunte ao Polvo", na época que criei o site, achava a ideia
-				muito interessante.
-			</p>
-			<ul>As Tecnologias Usadas Foram:</ul>
-			<li className={styles.Listinside}>HTML</li>
-			<li className={styles.Listinside}>CSS</li>
-			<li className={styles.Listinside}>JS</li>
-		</div>
-	)
-
 	const PokedexDesc = () => (
 		<div className={styles.TextPortGap}>
 			<p>
@@ -77,16 +63,6 @@ function Portifolio() {
 		>
 			<h2 className={styles.titlePortifolio}>Projetos</h2>
 			<div className={styles.projetos} ref={ref2}>
-				<CardPortifolio
-					imagem={sabio}
-					nome="Pergunte ao Sabio"
-					desc={<SabioDesc />}
-					data="09/2022"
-					id="sabio"
-					tecs={[htmlSVG, cssSVG, jsSVG]}
-					linkSite="https://oleoz1n.github.io/pergunte-ao-sabio/"
-					linkGithub="https://github.com/oleoz1n/pergunte-ao-sabio"
-				/>
 				<CardPortifolio
 					imagem={pokedex}
 					nome="Pokedex DIO"
