@@ -1,15 +1,15 @@
-import { useEffect } from "react"
-import styles from "./modal.module.css"
+import { useEffect } from "react";
+import styles from "./modal.module.css";
 
 interface ModalProps {
-	isOpen: any
-	setModalOpen: any
-	children: any
-	linkSite: any
-	linkGithub: any
-	imagem: any
-	title: any
-	data: any
+	isOpen: any;
+	setModalOpen: any;
+	children: any;
+	linkSite: any;
+	linkGithub: any;
+	imagem: any;
+	title: any;
+	data: any;
 }
 
 export default function Modal({
@@ -24,14 +24,13 @@ export default function Modal({
 }: ModalProps) {
 	useEffect(() => {
 		if (isOpen) {
-			document.body.classList.add(styles.disableScroll)
+			document.body.classList.add(styles.disableScroll);
 		} else {
-			document.body.classList.remove(styles.disableScroll)
+			document.body.classList.remove(styles.disableScroll);
 		}
-	}, [isOpen])
+	}, [isOpen]);
 
 	if (isOpen) {
-		console.log("linksite: ", linkSite)
 		return (
 			<>
 				<div className={styles.BACKGROUND_STYLE}>
@@ -57,7 +56,7 @@ export default function Modal({
 								<div className={styles.botoesModal}>
 									{linkSite == "" ? null : (
 										<a
-											className={styles.botaoModal2}
+											className={styles.botaoModal}
 											href={linkSite}
 											target="_blank"
 										>
@@ -80,12 +79,30 @@ export default function Modal({
 								</div>
 								<p className={styles.dataModal}>{data}</p>
 							</div>
+							<div className={styles.botoesModal2}>
+								{linkSite == "" ? null : (
+									<a
+										className={styles.botaoModal2}
+										href={linkSite}
+										target="_blank"
+									>
+										Site
+									</a>
+								)}
+								<a
+									className={styles.botaoModal2}
+									href={linkGithub}
+									target="_blank"
+								>
+									Github
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</>
-		)
+		);
 	}
 
-	return null
+	return null;
 }

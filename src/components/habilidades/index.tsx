@@ -17,6 +17,7 @@ import azure from "/azure.svg"
 import gcp from "/gcp.svg"
 import powerBi from "/powerBi.svg"
 import docker from "/docker.svg"
+import nextJs from "/nextjs.svg"
 
 import { useRef } from "react"
 import { useInView } from "framer-motion"
@@ -33,16 +34,17 @@ export default function Habilidades() {
 		{ imagem: jsSVG, nome: "JavaScript" },
 		{ imagem: figmaSVG, nome: "Figma" },
 		{ imagem: reactSVG, nome: "React" },
+		{ imagem: nextJs, nome: "Next.js" },
 		{ imagem: pythonSVG, nome: "Python" },
 		{ imagem: javaSVG, nome: "Java" },
+		{ imagem: spring, nome: "Spring Boot" },
 		{ imagem: sqlSVG, nome: "SQL" },
 		{ imagem: dotNetSVG, nome: ".NET 8" },
 		{ imagem: cSharp, nome: "C#" },
-		{ imagem: spring, nome: "Spring Boot" },
+		{ imagem: docker, nome: "Docker" },
 		{ imagem: azure, nome: "Azure" },
 		{ imagem: gcp, nome: "Google Cloud" },
 		{ imagem: powerBi, nome: "Power BI" },
-		{ imagem: docker, nome: "Docker" },
 	]
 	return (
 		<section

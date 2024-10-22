@@ -1,22 +1,25 @@
-import CardPortifolio from "./cardPortifolio"
-import { useRef } from "react"
-import { useInView } from "framer-motion"
-import styles from "./portifolio.module.css"
-import pokedex from "/pokedex.png"
-import cida from "/cida.png"
+import CardPortifolio from "./cardPortifolio";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import styles from "./portifolio.module.css";
+import pokedex from "/pokedex.png";
+import cida from "/cida.png";
+import ecommerce from "/ecommerce.png";
 
-import htmlSVG from "/html.svg"
-import apiSVG from "/api.svg"
-import jsSVG from "/js.svg"
-import cssSVG from "/css.svg"
-import cSharpSVG from "/cSharp.svg"
-import dotNetSVG from "/dotNet.svg"
-import azureSVG from "/azure.svg"
+import htmlSVG from "/html.svg";
+import apiSVG from "/api.svg";
+import jsSVG from "/js.svg";
+import cssSVG from "/css.svg";
+import cSharpSVG from "/cSharp.svg";
+import dotNetSVG from "/dotNet.svg";
+import azureSVG from "/azure.svg";
+import nextjsSVG from "/nextjs.svg";
+import tsSVG from "/ts.svg";
 
 function Portifolio() {
-	const ref = useRef(null)
-	const ref2 = useRef(null)
-	const isInView = useInView(ref, { once: true })
+	const ref = useRef(null);
+	const ref2 = useRef(null);
+	const isInView = useInView(ref, { once: true });
 
 	const PokedexDesc = () => (
 		<div className={styles.TextPortGap}>
@@ -30,7 +33,7 @@ function Portifolio() {
 			<li className={styles.Listinside}>JS</li>
 			<li className={styles.Listinside}>API REST</li>
 		</div>
-	)
+	);
 
 	const CidaDesc = () => (
 		<div className={styles.TextPortGap}>
@@ -47,7 +50,28 @@ function Portifolio() {
 			<li className={styles.Listinside}>.NET</li>
 			<li className={styles.Listinside}>Azure</li>
 		</div>
-	)
+	);
+
+	const EcommerceDesc = () => (
+		<div className={styles.TextPortGap}>
+			<p>
+				Essa aplicação foi desenvolvida usando Next.js e Tailwind CSS,
+				com foco em criar uma experiência de e-commerce eficiente. O
+				objetivo é permitir que os usuários naveguem e filtrem produtos
+				de forma rápida e intuitiva, além de adicionar itens ao carrinho
+				de compras. A funcionalidade de filtros é altamente
+				personalizável, permitindo que os usuários busquem por
+				categoria, preço e avaliações. O design responsivo e otimizado
+				foi construído com Tailwind CSS, garantindo uma interface leve e
+				moderna.
+			</p>
+			<ul>As Tecnologias Usadas Foram:</ul>
+			<li className={styles.Listinside}>NEXTJS</li>
+			<li className={styles.Listinside}>TYPESCRIPT</li>
+			<li className={styles.Listinside}>TAILWIND</li>
+			<li className={styles.Listinside}>API</li>
+		</div>
+	);
 
 	return (
 		<section
@@ -72,7 +96,16 @@ function Portifolio() {
 					linkSite="https://oleoz1n.github.io/Pokedex-Modify/"
 					linkGithub="https://github.com/oleoz1n/Pokedex-Modify"
 				/>
-
+				<CardPortifolio
+					imagem={ecommerce}
+					nome="Ecommerce"
+					desc={<EcommerceDesc />}
+					data="05/2024"
+					id="cida"
+					tecs={[nextjsSVG, tsSVG, apiSVG]}
+					linkSite="https://e-commerce-sepia-sigma.vercel.app"
+					linkGithub="https://github.com/oleoz1n/e-commerce"
+				/>
 				<CardPortifolio
 					imagem={cida}
 					nome="Cida"
@@ -85,7 +118,7 @@ function Portifolio() {
 				/>
 			</div>
 		</section>
-	)
+	);
 }
 
-export default Portifolio
+export default Portifolio;
