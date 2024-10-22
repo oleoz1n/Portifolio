@@ -5,6 +5,7 @@ import styles from "./portifolio.module.css";
 import pokedex from "/pokedex.png";
 import cida from "/cida.png";
 import ecommerce from "/ecommerce.png";
+import spring from "/spring.png";
 
 import htmlSVG from "/html.svg";
 import apiSVG from "/api.svg";
@@ -15,6 +16,8 @@ import dotNetSVG from "/dotNet.svg";
 import azureSVG from "/azure.svg";
 import nextjsSVG from "/nextjs.svg";
 import tsSVG from "/ts.svg";
+import javaSVG from "/java.svg";
+import springSVG from "/spring.svg";
 
 function Portifolio() {
 	const ref = useRef(null);
@@ -69,7 +72,46 @@ function Portifolio() {
 			<li className={styles.Listinside}>NEXTJS</li>
 			<li className={styles.Listinside}>TYPESCRIPT</li>
 			<li className={styles.Listinside}>TAILWIND</li>
-			<li className={styles.Listinside}>API</li>
+			<li className={styles.Listinside}>API REST</li>
+		</div>
+	);
+
+	const SpringUnidadesDesc = () => (
+		<div className={styles.TextPortGap}>
+			<p>
+				Essa aplicação foi desenvolvida durante a faculdade usando
+				Spring Boot, com foco em criar uma api para a gestão de oprações
+				de unidades de uma empresa.
+			</p>
+			<ul>As Tecnologias Usadas Foram:</ul>
+			<li className={styles.Listinside}>JAVA</li>
+			<li className={styles.Listinside}>SPRING</li>
+		</div>
+	);
+
+	const SpringMotosDesc = () => (
+		<div className={styles.TextPortGap}>
+			<p>
+				Essa aplicação foi desenvolvida durante a faculdade usando
+				Spring Boot, com foco em criar uma api para a gestão de veículos
+				a serem comercializados.
+			</p>
+			<ul>As Tecnologias Usadas Foram:</ul>
+			<li className={styles.Listinside}>JAVA</li>
+			<li className={styles.Listinside}>SPRING</li>
+		</div>
+	);
+
+	const SpringDepositoDesc = () => (
+		<div className={styles.TextPortGap}>
+			<p>
+				Essa aplicação foi desenvolvida durante a faculdade usando
+				Spring Boot, com foco em criar uma api para a gestão de produtos
+				estocados a serem comercializados pelas lojas.
+			</p>
+			<ul>As Tecnologias Usadas Foram:</ul>
+			<li className={styles.Listinside}>JAVA</li>
+			<li className={styles.Listinside}>SPRING</li>
 		</div>
 	);
 
@@ -97,14 +139,45 @@ function Portifolio() {
 					linkGithub="https://github.com/oleoz1n/Pokedex-Modify"
 				/>
 				<CardPortifolio
+					imagem={spring}
+					nome="Gestão de Unidades FIAP"
+					desc={<SpringUnidadesDesc />}
+					data="04/2024"
+					id="springUnidades"
+					tecs={[javaSVG, springSVG]}
+					linkSite=""
+					linkGithub="https://github.com/oleoz1n/spring-projetoFaculdade-unidades"
+				/>
+				<CardPortifolio
+					imagem={spring}
+					nome="Gestão de Deposito FIAP"
+					desc={<SpringDepositoDesc />}
+					data="05/2024"
+					id="springDeposito"
+					tecs={[javaSVG, springSVG]}
+					linkSite=""
+					linkGithub="https://github.com/oleoz1n/spring-projetoFaculdade-deposito"
+				/>
+
+				<CardPortifolio
 					imagem={ecommerce}
 					nome="Ecommerce"
 					desc={<EcommerceDesc />}
 					data="05/2024"
-					id="cida"
+					id="ecommerce"
 					tecs={[nextjsSVG, tsSVG, apiSVG]}
 					linkSite="https://e-commerce-sepia-sigma.vercel.app"
 					linkGithub="https://github.com/oleoz1n/e-commerce"
+				/>
+				<CardPortifolio
+					imagem={spring}
+					nome="Gestão de Motos FIAP"
+					desc={<SpringMotosDesc />}
+					data="06/2024"
+					id="springMotos"
+					tecs={[javaSVG, springSVG]}
+					linkSite=""
+					linkGithub="https://github.com/oleoz1n/spring-projetoFaculdade-motos"
 				/>
 				<CardPortifolio
 					imagem={cida}
