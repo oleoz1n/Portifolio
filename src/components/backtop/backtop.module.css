@@ -24,9 +24,8 @@
 }
 
 .backtopIcon{
-    font-size: 2.5rem;
-    font-weight: 200;
-    color: #ff5470;
+    width: 24px;
+    height: 24px;
 }
 
 .backtopIcon:active {

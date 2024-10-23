@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
-import styles from "./backtop.module.css";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import styles from "./backtop.module.css";
+import upArrow from "/upArrow.svg";
 
 export default function ScrollPage() {
   const [isVisible, setIsVisible] = useState(true);
@@ -57,9 +58,7 @@ export default function ScrollPage() {
       id="backTopAnimation"
     >
       <a href="#header">
-        <span className={`${styles.backtopIcon} material-symbols-outlined`}>
-          arrow_upward
-        </span>
+        <img className={styles.backtopIcon} src={upArrow} alt="upArrow" />
       </a>
     </motion.div>
   );
