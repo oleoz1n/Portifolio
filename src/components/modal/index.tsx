@@ -52,6 +52,7 @@ export default function Modal({
 									className={styles.imagemModal}
 									src={imagem}
 									alt={title}
+									loading="eager"
 								/>
 								<div className={styles.botoesModal}>
 									{linkSite == "" ? null : (
