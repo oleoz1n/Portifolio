@@ -10,13 +10,18 @@
 }
 
 * {
-    font-family: "Roboto", "open sans";
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
     word-wrap: break-word;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "sans-serif";
+    overflow-x: hidden;
+
 }
 
 body::-webkit-scrollbar {

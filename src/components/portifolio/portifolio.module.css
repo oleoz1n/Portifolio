@@ -14,9 +14,9 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 2rem;
+	padding: 2rem 4rem;
 	border-radius: 1rem;
-	gap: 1rem;
+	gap: 2rem;
 	justify-content: center;
 }
 
@@ -37,7 +37,7 @@
 	}
 
 	.projetos {
-		padding: 1rem;
+		padding: 1rem 2rem;
 		border-radius: 0;
 	}
 	.TextPortGap {
@@ -50,5 +50,9 @@
 @media (max-width: 959px) {
 	.titlePortifolio {
 		font-size: 2rem;
+	}
+	.projetos {
+		padding: 1rem 2rem;
+		border-radius: 0;
 	}
 }

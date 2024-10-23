@@ -1,8 +1,8 @@
+import { motion } from "framer-motion";
+import { useState } from "react";
+import Modal from "../../modal";
 import styles from "./cardPortifolio.module.css";
 import CardTecnologias from "./cardTecnologias";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import Modal from "../../modal";
 
 type CardPortifolioProps = {
 	imagem: any;
@@ -31,10 +31,11 @@ function CardPortifolio({
 	return (
 		<>
 			<motion.div
-				className={styles.centralizaModal}
 				animate={{
 					zIndex: openModal ? 1000 : 1000,
 					opacity: openModal ? 1 : 0,
+					display: openModal ? "block" : "none",
+
 				}}
 				transition={{
 					duration: openModal ? 0.3 : 0.5,
@@ -61,7 +62,7 @@ function CardPortifolio({
 					setHovered(false);
 				}}
 				animate={{
-					scale: isHovered ? 1.16 : 1,
+					scale: isHovered ? 1.08 : 1,
 					zIndex: isHovered ? 12 : 0,
 				}}
 				transition={{
