@@ -1,30 +1,31 @@
-import Habilidade from "./habilidade"
-import styles from "./habilidades.module.css"
-import htmlSVG from "/html.svg"
-import tsSVG from "/ts.svg"
-import apiSVG from "/api.svg"
-import jsSVG from "/js.svg"
-import figmaSVG from "/figma.svg"
-import reactSVG from "/react.svg"
-import cssSVG from "/css.svg"
-import pythonSVG from "/python.svg"
-import javaSVG from "/java.svg"
-import sqlSVG from "/sql.svg"
-import dotNetSVG from "/dotNet.svg"
-import cSharp from "/cSharp.svg"
-import spring from "/spring.svg"
-import azure from "/azure.svg"
-import gcp from "/gcp.svg"
-import powerBi from "/powerBi.svg"
-import docker from "/docker.svg"
-import nextJs from "/nextjs.svg"
+import Habilidade from "./habilidade";
+import styles from "./habilidades.module.css";
+import htmlSVG from "/html.svg";
+import tsSVG from "/ts.svg";
+import apiSVG from "/api.svg";
+import jsSVG from "/js.svg";
+import figmaSVG from "/figma.svg";
+import reactSVG from "/react.svg";
+import cssSVG from "/css.svg";
+import pythonSVG from "/python.svg";
+import javaSVG from "/java.svg";
+import sqlSVG from "/sql.svg";
+import dotNetSVG from "/dotNet.svg";
+import cSharp from "/cSharp.svg";
+import spring from "/spring.svg";
+import azure from "/azure.svg";
+import gcp from "/gcp.svg";
+import powerBi from "/powerBi.svg";
+import docker from "/docker.svg";
+import nextJs from "/nextjs.svg";
+import nodeJs from "/nodejs.svg";
 
-import { useRef } from "react"
-import { useInView } from "framer-motion"
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 export default function Habilidades() {
-	const ref = useRef(null)
-	const isInView = useInView(ref, { once: true })
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
 
 	const listaDeHabilidades = [
 		{ imagem: apiSVG, nome: "API REST" },
@@ -35,6 +36,7 @@ export default function Habilidades() {
 		{ imagem: figmaSVG, nome: "Figma" },
 		{ imagem: reactSVG, nome: "React" },
 		{ imagem: nextJs, nome: "Next.js" },
+		{ imagem: nodeJs, nome: "Node.js" },
 		{ imagem: pythonSVG, nome: "Python" },
 		{ imagem: javaSVG, nome: "Java" },
 		{ imagem: spring, nome: "Spring Boot" },
@@ -45,7 +47,7 @@ export default function Habilidades() {
 		{ imagem: azure, nome: "Azure" },
 		{ imagem: gcp, nome: "Google Cloud" },
 		{ imagem: powerBi, nome: "Power BI" },
-	]
+	];
 	return (
 		<section
 			ref={ref}
@@ -68,5 +70,5 @@ export default function Habilidades() {
 				))}
 			</div>
 		</section>
-	)
+	);
 }

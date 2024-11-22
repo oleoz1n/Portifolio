@@ -1,10 +1,10 @@
-import styles from "./sobremim.module.css"
-import { useRef } from "react"
-import { useInView } from "framer-motion"
+import styles from "./sobremim.module.css";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 function Sobremim() {
-	const ref = useRef(null)
-	const isInView = useInView(ref, { once: true })
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
 
 	return (
 		<section
@@ -24,20 +24,20 @@ function Sobremim() {
 					Tecnólogo em Análise e Desenvolvimento de Sistemas pela
 					FIAP. Possuo experiência em desenvolvimento web e mobile,
 					utilizando tecnologias como <span>React</span>,{" "}
-					<span>TypeScript</span>, <span>React Native</span>,
-					<span>Java</span>, <span>Spring</span>, <span>.NET8</span>,{" "}
-					<span>Python</span> e <span>Kotlin</span>. Tenho forte
-					atuação em manipulação de dados com <span>PL/SQL</span> e{" "}
-					<span>SQL</span>, além de trabalhar com containers{" "}
-					<span>(Docker)</span> e plataformas em nuvem{" "}
-					<span>(GCP, Azure)</span>. Sou adaptável, comunicativo e
-					focado em metodologias ágeis
+					<span>TypeScript</span>, <span>NodeJs</span>,{" "}
+					<span>React Native</span>,<span>Java</span>,{" "}
+					<span>Spring</span>, <span>.NET8</span>, <span>Python</span>{" "}
+					e <span>Kotlin</span>. Tenho forte atuação em manipulação de
+					dados com <span>PL/SQL</span> e <span>SQL</span>, além de
+					trabalhar com containers <span>(Docker)</span> e plataformas
+					em nuvem <span>(GCP, Azure)</span>. Sou adaptável,
+					comunicativo e focado em metodologias ágeis
 					<span>(Scrum)</span>, com habilidades sólidas em resolução
 					de problemas e inteligência emocional.
 				</p>
 			</div>
 		</section>
-	)
+	);
 }
 
-export default Sobremim
+export default Sobremim;
