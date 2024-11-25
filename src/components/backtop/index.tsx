@@ -58,13 +58,7 @@ export default function ScrollPage() {
 			id="backTopAnimation"
 			onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
 		>
-			<a>
-				<img
-					className={styles.backtopIcon}
-					src={upArrow}
-					alt="upArrow"
-				/>
-			</a>
+			<img className={styles.backtopIcon} src={upArrow} alt="upArrow" />
 		</motion.div>
 	);
 }
