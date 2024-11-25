@@ -1,32 +1,32 @@
 .sectionHabilidades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 60vh;
 }
 
 .titleH {
-    color: #00214d;
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0;
+	color: #00214d;
+	font-size: 3rem;
+	margin: 2rem 0 1rem 0;
 }
 
 .habilidades {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0rem 10rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 0rem 10rem;
 }
 
 @media (max-width: 959px) {
-    .titleH {
-        font-size: 1.5rem;
-    }
-    .habilidades {
-        padding: 0rem 1rem;
-    }
+	.titleH {
+		font-size: 1.5rem;
+	}
+	.habilidades {
+		padding: 0rem 1rem;
+	}
 }

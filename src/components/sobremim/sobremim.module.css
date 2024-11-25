@@ -1,58 +1,49 @@
 .sectionSobremim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .divSobremim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fffffe;
-    padding: 4rem;
-    border-radius: 1rem;
-    max-width: 1600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fffffe;
+	padding: 2rem;
+	border-radius: 1rem;
+	max-width: 1600px;
 }
 
 .titleS {
-    color: #00214d;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+	color: #00214d;
+	font-size: 3rem;
+	margin-bottom: 1rem;
 }
 
 .pSobre {
-    font-weight: 500;
-    color: #1b2d45;
-    padding: 0rem;
-    text-align: center;
-    font-size: 1.5rem;
+	font-weight: 500;
+	color: #1b2d45;
+	padding: 0rem;
+	text-align: center;
+	font-size: 1.5rem;
 }
 
 .pSobre span {
-    color: #ff5470;
-    font-weight: 800;
+	color: #ff5470;
+	font-weight: 800;
 }
 
 @media (max-width: 959px) {
-    .divSobremim {
-        padding: 4rem 1rem;
-        background-color: #fffffe;
-    }
+	.titleS {
+		font-size: 2rem;
+	}
 
-    .titleS {
-        font-size: 2rem;
-    }
+	.titleH {
+		font-size: 1.5rem;
+	}
 
-    .titleH {
-        font-size: 1.5rem;
-    }
-
-    .pSobre {
-        font-size: 1.2rem;
-    }
-
-    .pSobre span {
-        color: #00214d;
-    }
+	.pSobre {
+		font-size: 1.2rem;
+	}
 }
