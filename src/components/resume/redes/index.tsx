@@ -1,6 +1,6 @@
-import linkedinIcon from "/linkedin.svg"
-import githunIcon from "/github.svg"
-import styles from "./redes.module.css"
+import linkedinIcon from "/linkedin.svg";
+import githunIcon from "/github.svg";
+import styles from "./redes.module.css";
 
 function Github() {
 	return (
@@ -11,11 +11,13 @@ function Github() {
 						src={githunIcon}
 						className={styles.Icons}
 						alt="GitHub-Icon"
+						height={"100%"}
+						width={"auto"}
 					/>
 				</div>
 			</a>
 		</div>
-	)
+	);
 }
 
 function Linkedin() {
@@ -27,11 +29,13 @@ function Linkedin() {
 						src={linkedinIcon}
 						className={styles.Icons}
 						alt="Linkedin-Icon"
+						height={"100%"}
+						width={"auto"}
 					/>
 				</div>
 			</a>
 		</div>
-	)
+	);
 }
 
 function Redes() {
@@ -40,7 +44,7 @@ function Redes() {
 			<Github />
 			<Linkedin />
 		</>
-	)
+	);
 }
 
-export default Redes
+export default Redes;
