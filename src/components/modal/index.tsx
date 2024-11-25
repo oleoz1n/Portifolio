@@ -41,9 +41,13 @@ export default function Modal({
 							onClick={setModalOpen}
 						>
 							<span
-								className={`${styles.spamFechar} material-symbols-outlined`}
+								className={`${styles.spamFechar} ${styles.ico_times}`}
 							>
-								close
+								<i
+									className="ico-times"
+									role="img"
+									aria-label="Cancel"
+								></i>
 							</span>
 						</div>
 						<div className={styles.cardModal}>
